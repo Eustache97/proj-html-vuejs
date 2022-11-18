@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+@import "node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "./partials/variables.scss";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+}
+img{
+    max-width: 100%;
+}
