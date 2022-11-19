@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
-@import "node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 @import "./partials/variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+@import "node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 *{
     margin: 0;
     padding: 0;
@@ -12,4 +12,30 @@ html{
 }
 img{
     max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: .5rem;
+    font-weight: 500;
+}
+.btn-primary{
+    background-color: $primary-color;
+}
+.btn-secondary{
+    border: 1px solid $primary-color;
 }
