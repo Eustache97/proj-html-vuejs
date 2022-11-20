@@ -8,7 +8,7 @@
 }
 html{
     font-family: 'Montserrat', sans-serif;
-    font-size: 100%;
+    font-size: .9rem;
 }
 img{
     max-width: 100%;
@@ -38,4 +38,13 @@ a{
 }
 .btn-secondary{
     border: 1px solid $primary-color;
+}
+.mt-05{
+    margin-top: .5em;
+}
+.mb-05{
+    margin-bottom: .5em;
+}
+.mb-1{
+    margin-bottom: 1em;
 }

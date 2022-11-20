@@ -8,6 +8,23 @@ export const store = reactive({
         email: "hello@example.com"
     },
     menu: ["home", "about", "services", "process", "testimonials"],
+    vehicles: [
+        {
+            image: "truck-1",
+            type: "Light",
+            caracteristique: "Max-Weight 1200 Kg"
+        },
+        {
+            image: "truck-1",
+            type: "Medium",
+            caracteristique: "Max-Weight 6000 Kg"
+        },
+        {
+            image: "truck-1",
+            type: "Heavy",
+            caracteristique: "Max-Weight 24000 Kg"
+        }
+    ],
     services: [
         {
             name: "Tecnology",
