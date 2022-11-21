@@ -39,6 +39,11 @@ a{
 .btn-secondary{
     border: 1px solid $primary-color;
 }
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
 .mt-05{
     margin-top: .5em;
 }
@@ -47,4 +52,10 @@ a{
 }
 .mb-1{
     margin-bottom: 1em;
+}
+.mb-2{
+    margin-bottom: 2em;
+}
+.w-80{
+    width: 80%;
 }

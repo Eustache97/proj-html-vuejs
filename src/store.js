@@ -27,14 +27,17 @@ export const store = reactive({
     ],
     services: [
         {
+            icon: "fa-solid fa-truck-ramp-box",
             name: "Tecnology",
             description: "We are continually focused on developing tecnology solutions adapted to our clients needs."
         },
         {
+            icon: "fa-solid fa-temperature-low",
             name: "Reefer Cargo",
             description: "Regular and frequent monitoring from the receipt of the loaded container to final destination."
         },
         {
+            icon: "fa-sharp fa-solid fa-boxes-stacked",
             name: "Dry Cargo",
             description: "We work with most types of dry cargo, from valuable cargo to the most dangerous requiring care."
         }
