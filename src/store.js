@@ -89,23 +89,23 @@ export const store = reactive({
     ],
     feedbacks: [
         {
-            entityImg: "logo-1.png",
+            entityImg: "logo-1",
             text: "Praesent volutpat justo sit amet elementum malesuada, Praesent sagittis augue justo, in accumsan ocsi rhoncus at pellentesque.Lorem ipsum dolor sit amet,consectetur adipiscing elit." 
         },
         {
-            entityImg: "logo-2.png",
+            entityImg: "logo-2",
             text: "Praesent volutpat justo sit amet elementum malesuada, Praesent sagittis augue justo, in accumsan ocsi rhoncus at pellentesque.Lorem ipsum dolor sit amet,consectetur adipiscing elit." 
         },
         {
-            entityImg: "logo-3.png",
+            entityImg: "logo-3",
             text: "Praesent volutpat justo sit amet elementum malesuada, Praesent sagittis augue justo, in accumsan ocsi rhoncus at pellentesque.Lorem ipsum dolor sit amet,consectetur adipiscing elit." 
         },
         {
-            entityImg: "logo-4.png",
+            entityImg: "logo-4",
             text: "Praesent volutpat justo sit amet elementum malesuada, Praesent sagittis augue justo, in accumsan ocsi rhoncus at pellentesque.Lorem ipsum dolor sit amet,consectetur adipiscing elit." 
         },
         {
-            entityImg: "logo-5.png",
+            entityImg: "logo-5",
             text: "Praesent volutpat justo sit amet elementum malesuada, Praesent sagittis augue justo, in accumsan ocsi rhoncus at pellentesque.Lorem ipsum dolor sit amet,consectetur adipiscing elit." 
         }
     ],
