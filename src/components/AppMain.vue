@@ -2,11 +2,13 @@
 import {store} from "../store";
 import SectionAbout from "./SectionAbout.vue";
 import SectionServices from "./SectionServices.vue";
+import SectionProcess from "./SectionProcess.vue";
 export default {
     name: "AppMain",
     components: {
         SectionAbout,
-        SectionServices
+        SectionServices,
+        SectionProcess
     },
     data() {
         return {
@@ -18,6 +20,7 @@ export default {
 <template>
   <SectionAbout />
   <SectionServices />
+  <SectionProcess />
 </template>
 <style lang="scss">
 @use "../styles/partials/variables.scss"as*;
