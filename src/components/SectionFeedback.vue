@@ -37,6 +37,8 @@ export default {
 @use "../styles/partials/variables.scss"as*;
 section#feedbacks{
     width: 100%;
+    height: 500px;
+    overflow-y: scroll;
     padding: 5em 0;
     color: $white-color;
     background-color: $dark-color;
