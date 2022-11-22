@@ -39,8 +39,6 @@ export default {
 @use "../styles/partials/variables.scss"as*;
 section#feedbacks{
     width: 100%;
-    height: 500px;
-    overflow-y: scroll;
     padding: 5em 0;
     color: $white-color;
     background-color: $dark-color;
@@ -51,6 +49,8 @@ section#feedbacks{
             margin: 0 auto;
         }
         .row{
+            height: 250px;
+            overflow-y: scroll;
             gap: 1.5em;
             .col{
                 width: calc(100% / 3 - 1.5em);
