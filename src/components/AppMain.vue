@@ -5,6 +5,7 @@ import SectionServices from "./SectionServices.vue";
 import SectionProcess from "./SectionProcess.vue";
 import SectionResults from "./SectionResults.vue";
 import SectionFeedback from "./SectionFeedback.vue";
+import SectionMessage from "./SectionMessage.vue";
 export default {
     name: "AppMain",
     components: {
@@ -12,7 +13,8 @@ export default {
         SectionServices,
         SectionProcess,
         SectionResults,
-        SectionFeedback
+        SectionFeedback,
+        SectionMessage
     },
     data() {
         return {
@@ -27,6 +29,7 @@ export default {
   <SectionProcess />
   <SectionResults />
   <SectionFeedback />
+  <SectionMessage />
 </template>
 <style lang="scss">
 @use "../styles/partials/variables.scss"as*;
