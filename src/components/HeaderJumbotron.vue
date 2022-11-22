@@ -1,7 +1,11 @@
 <script>
 import {store} from "../store";
+import AppNavbar from "./AppNavbar.vue";
 export default {
     name: "HeaderJumbotron",
+    components: {
+        AppNavbar
+    },
     data() {
         return {
             store
@@ -22,18 +26,7 @@ export default {
                 <div class="logo">
                     <h2><span>Nex</span> Gen</h2>
                 </div>
-                <div class="navbar">
-                    <ul class="d-flex">
-                        <li v-for="(link, index) in store.menu" :key="index">
-                            <a href=""> {{link}} </a>
-                        </li>
-                        <div class="get-in">
-                            <i class="fa-regular fa-user"></i>
-                             <a class="btn btn-primary" href="">Get in touch</a>
-                         </div> 
-                    </ul>
-                </div>
-                
+                <AppNavbar />   
             </div>
             <div class="jumbotron-inner">
                 <div class="jumbo-content">
@@ -66,29 +59,6 @@ export default {
                 padding: .5em;
                 .logo{
                     height: 100%;
-                }
-                .navbar{
-                    height: 100%;
-                    ul{
-                        list-style-type: none;
-                        li{
-                            a{
-                                display: inline-block;
-                                text-transform: uppercase;
-                                margin-right: 1rem;
-                                font-weight: 500;
-                                padding-bottom: .5em;
-                            }
-                            &:hover a{
-                                border-bottom: 2px solid $primary-color;
-                            }
-                        }
-                    }
-                    .get-in{
-                        i{
-                            margin-right: .5em;
-                        }
-                    }
                 }
             }
             .jumbotron-inner{
