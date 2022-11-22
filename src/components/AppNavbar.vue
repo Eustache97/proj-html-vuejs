@@ -2,9 +2,6 @@
 import { store } from "../store";
 export default {
     name: "AppNavbar",
-    props: {
-        item: String
-    },
     data() {
         return {
             store
@@ -15,7 +12,7 @@ export default {
 <template>
 <div class="navbar">
     <ul class="d-flex">
-        <li v-for="(link, index) in store.menu" :key="index" :item="link">
+        <li v-for="(link, index) in store.menu" :key="index" >
             <a href=""> {{link}} </a>
         </li>
         <div class="get-in">
