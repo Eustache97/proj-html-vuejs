@@ -35,18 +35,10 @@ section#results{
     background-size: cover;
     background-position: center;
     .container{
-        h4{
-            color: $primary-color;
-            text-transform: uppercase;
-        }
         h2{
             font-size: 2rem;
             margin-top: 1em ;
             margin-bottom: 2em;
-            span{
-                color: $primary-color;
-                background-color: rgba($color: $primary-color, $alpha: .2);
-            }
         }
         .row{
             justify-content: space-between;

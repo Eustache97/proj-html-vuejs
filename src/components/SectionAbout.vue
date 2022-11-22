@@ -72,25 +72,15 @@ section#about{
             width: 70%;
             padding-right: 2em;
             color: $silver-color;
-            h4{
-                color: $primary-color;
-                text-transform: uppercase;
-            }
             h2{
-                margin: 1em 0;
-                font-size: 2rem;
                 color: $dark-color;
-                span{
-                    background-color: rgba($color: $primary-color, $alpha: .2);
-                    color: $primary-color;
-                }
             }
             p.cit{
                 padding-left: 1em;
                 border-left: 2px solid  rgba($color: $primary-color, $alpha: .2);
             }
             ul{
-                list-style-type: circle;
+                list-style-type:initial;
                 line-height: 2em;
             }
         }

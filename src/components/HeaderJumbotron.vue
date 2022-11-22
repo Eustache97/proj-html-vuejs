@@ -20,7 +20,7 @@ export default {
         <div class="container">
             <div class="nav d-flex">
                 <div class="logo">
-                    <img :src="getImg(store.infos.logo)" alt="">
+                    <h2><span>Nex</span> Gen</h2>
                 </div>
                 <div class="navbar">
                     <ul class="d-flex">
@@ -64,6 +64,9 @@ export default {
                 width: 100%;
                 height: 70px;
                 padding: .5em;
+                .logo{
+                    height: 100%;
+                }
                 .navbar{
                     height: 100%;
                     ul{
@@ -74,6 +77,10 @@ export default {
                                 text-transform: uppercase;
                                 margin-right: 1rem;
                                 font-weight: 500;
+                                padding-bottom: .5em;
+                            }
+                            &:hover a{
+                                border-bottom: 2px solid $primary-color;
                             }
                         }
                     }

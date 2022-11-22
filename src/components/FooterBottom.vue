@@ -15,6 +15,7 @@ export default {
 @use "../styles/partials/variables.scss"as*;
 .footer-bottom{
     width: 100%;
+    font-size: .7rem;
     padding: 1em 0;
     color: $silver-color;
     background-color: $black-color;

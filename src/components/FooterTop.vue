@@ -1,7 +1,11 @@
 <script>
 import {store} from "../store";
+import AppCardFooterLinks from "./AppCardFooterLinks.vue";
 export default {
     name: "FooterTop",
+    components: {
+        AppCardFooterLinks
+    },
     data() {
         return {
             store
@@ -17,24 +21,16 @@ export default {
                     <h2><span>Nex</span>Gen</h2>
                 </div>
                 <p>A functional HTML template for Corporate & Business</p>
-                <div class="reference"><i class="fa-solid fa-phone"></i><span> {{store.infos.phoneNumber}} </span></div>
-                <div class="reference"><i class="fa-solid fa-envelope"></i><span> {{store.infos.email}} </span></div>
-                <div class="reference"><i class="fa-solid fa-location-dot"></i><span> {{store.infos.side}} </span></div>
+                <div class="reference"><i class="fa-solid fa-phone"></i><a href=""> {{store.infos.phoneNumber}} </a></div>
+                <div class="reference"><i class="fa-solid fa-envelope"></i><a href=""> {{store.infos.email}} </a></div>
+                <div class="reference"><i class="fa-solid fa-location-dot"></i><a href=""> {{store.infos.side}} </a></div>
                 <a class="btn btn-secondary" href="">Get in touch</a>
             </div>
             <div class="footer-links">
                 <div class="row">
                     <div class="col"
-                    v-for="(item, index) in store.footerlinks" :key="index">
-                        <div class="card">
-                            <h3 class="mb-1"> {{item.title}} </h3>
-                            <ul>
-                                <li v-for="(link, index2) in item.links" :key="index2">
-                                    <i class="fa-solid fa-chevron-right"></i><a href=""> {{link}} </a>
-                                </li>
-                            </ul>
-                            
-                        </div>
+                    v-for="(element, index) in store.footerlinks" :key="index">
+                        <AppCardFooterLinks :item="element"/>
                     </div>
                 </div>
             </div>
@@ -76,29 +72,6 @@ export default {
                     width: calc(100% / 3 - 1em);
                     background-color: $shark-color;
                     border-radius: 5px;
-                    .card{
-                        width:100%;
-                        padding: 1.5em;
-                        h3{
-                            color: $white-color;
-                        }
-                        ul{
-                            list-style-type: none;
-                            line-height: 1.5em;
-                            li{
-                                i{
-                                    margin-right: 1em;
-                                }   
-                                &:hover i{
-                                        transform: rotate(90deg);
-                                }
-                                &:hover a{
-                                        color: $primary-color;
-                                }
-                            }
-                            
-                        }
-                    }
                 }
             }
 

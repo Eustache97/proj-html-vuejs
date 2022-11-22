@@ -46,9 +46,9 @@ export default {
                 <h3>Example Inc.</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p>Praesent diam lacus, dapibus sed imperdiet consectetur</p>
-                <div class="reference"><i class="fa-solid fa-phone icon"></i><span> {{store.infos.phoneNumber}} </span></div>
-                <div class="reference"><i class="fa-solid fa-envelope icon"></i><span> {{store.infos.email}} </span></div>
-                <div class="reference"><i class="fa-solid fa-location-dot icon"></i><span> {{store.infos.side}} </span></div>
+                <div class="reference"><i class="fa-solid fa-phone icon"></i><a href=""> {{store.infos.phoneNumber}} </a></div>
+                <div class="reference"><i class="fa-solid fa-envelope icon"></i><a href=""> {{store.infos.email}} </a></div>
+                <div class="reference"><i class="fa-solid fa-location-dot icon"></i><a href=""> {{store.infos.side}} </a></div>
                 <a class="btn btn-secondary" href="">view map</a>
             </div>
         </div>
@@ -68,18 +68,6 @@ section#get-in-touch{
             .send-message{
                 width: 70%;
                 padding-right: 2em;
-                h4{
-                    color: $primary-color;
-                    text-transform: uppercase;
-                }
-                h2{
-                    font-size: 2rem;
-                    margin: 1em 0;
-                    span{
-                        color: $primary-color;
-                        background-color: rgba($color: $primary-color, $alpha: .2);
-                    }
-                }
                 p{
                     color: $silver-color;
                 }
@@ -128,7 +116,7 @@ section#get-in-touch{
                         color: $primary-color;
                         background-color: rgba($color: $primary-color, $alpha: .2)
                     }
-                    span{
+                    a{
                         color: $primary-color;
                     }
                 }

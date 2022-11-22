@@ -43,7 +43,7 @@ export default {
 @use "../styles/partials/variables.scss"as*;
 .header-top{
     background-color: $header_top-color;
-    color: $white-color;
+    color: $silver-color;
     font-size: .8rem;
     padding: 1em;
     .container{

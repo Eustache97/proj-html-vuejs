@@ -39,18 +39,8 @@ section#process{
         width: 50%;
         margin: 0 auto;
     }
-    h4{
-        color: $primary-color;
-        text-transform: uppercase;
-    }
     h2{
-        font-size: 2rem;
-        margin: 1rem 0;
         color: $dark-color;
-        span{
-            color: $primary-color;
-            background-color: rgba($color: $primary-color, $alpha: .2);
-        }
     }
     .row{
         border-top: 3px solid rgba($color: $primary-color, $alpha: .2);
